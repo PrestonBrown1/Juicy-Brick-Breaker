@@ -1,0 +1,53 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://c7ihup0fijhpd"]
+
+[ext_resource type="FontFile" uid="uid://ryh7si63gp1u" path="res://Assets/Orbitron Black.ttf" id="1_bgip7"]
+[ext_resource type="FontFile" uid="uid://wcn5la5o7tat" path="res://Assets/Orbitron Bold.ttf" id="2_yki0d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1wob"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpcqi"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtkr3"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1wa2"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5eg2q"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[resource]
+default_font = ExtResource("2_yki0d")
+default_font_size = 40
+Button/colors/font_color = Color(0, 0, 1, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("1_bgip7")
+Button/styles/disabled = SubResource("StyleBoxFlat_p1wob")
+Button/styles/focus = SubResource("StyleBoxFlat_bpcqi")
+Button/styles/hover = SubResource("StyleBoxFlat_rtkr3")
+Button/styles/normal = SubResource("StyleBoxFlat_j1wa2")
+Button/styles/pressed = SubResource("StyleBoxFlat_5eg2q")
+Label/colors/font_color = Color(0, 0, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
