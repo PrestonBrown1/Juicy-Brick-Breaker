@@ -6,6 +6,7 @@ var speed_multiplier = 1.0
 var accelerate = false
 
 var released = true
+var tween
 
 var initial_velocity = Vector2.ZERO
 
@@ -24,6 +25,11 @@ func _on_Ball_body_entered(body):
 	if body.has_method("hit"):
 		body.hit(self)
 		accelerate = true	
+	if tween:
+		tween.kill()
+	var tween = create_tween()
+	$Sprite2D.modulate.v = 0
+	tween.tween_property($Sprite2D, "modulate:v", 1, .5)
 
 func _input(event):
 	if not released and event.is_action_pressed("release"):
