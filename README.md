@@ -19,6 +19,7 @@ Sound for Brick
 Sound for Paddle
 Sound for Death
 Main Music
+Brick Particles - Currently not working?
 
 
 ## References
