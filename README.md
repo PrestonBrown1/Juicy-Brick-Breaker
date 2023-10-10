@@ -15,6 +15,10 @@ Particle for Ball collision to Paddle
 Brick Texture
 Tween on Ball Collision
 Fixed Ball Collision on Power Up
+Sound for Brick
+Sound for Paddle
+Sound for Death
+Main Music
 
 
 ## References
