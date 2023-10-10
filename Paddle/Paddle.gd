@@ -5,6 +5,7 @@ var speed = 10.0
 var width = 0
 var width_default = 0
 var decay = 0.02
+var tween
 
 func _ready():
 	width = $CollisionShape2D.get_shape().size.x
@@ -22,7 +23,14 @@ func _input(event):
 		target.x += event.relative.x
 
 func hit(_ball):
+	var PaddleSound = get_node("/root/Game/SoundContainer/PaddleSound")
+	PaddleSound.play()
 	$ParticleSpray1.emitting = true
+	if tween:
+		tween.kill()
+	var tween = create_tween()
+	$Sprite2D.modulate.v = 0
+	tween.tween_property($Sprite2D, "modulate:v", 1, .5)
 
 func powerup(payload):
 	for c in $Powerups.get_children():

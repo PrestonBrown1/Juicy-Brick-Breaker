@@ -15,6 +15,8 @@ func _physics_process(_delta):
 		queue_free()
 
 func hit(_ball):
+	var BrickSound = get_node("/root/Game/SoundContainer/BrickSound")
+	BrickSound.play()
 	die()
 
 func die():

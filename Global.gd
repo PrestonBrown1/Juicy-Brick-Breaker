@@ -68,6 +68,8 @@ func update_score(s):
 		HUD.update_score()
 
 func update_lives(l):
+	var DeathSound = get_node("/root/Game/SoundContainer/DeathSound")
+	DeathSound.play()
 	lives += l
 	var HUD = get_node_or_null("/root/Game/UI/HUD")
 	if HUD != null:
