@@ -12,14 +12,19 @@ Ball Texture
 Paddle Texture
 UI Theme
 Particle for Ball collision to Paddle
+Brick Texture
+Tween on Ball Collision
+Fixed Ball Collision on Power Up
 
 
 ## References
 Orbitron Font - Made by Mat McInerney
 
 ## Future Development
-Brick textures,
 More Particles
+More Tweening
+Ball Texture on Lives
+Screen Shake
 
 ## Created by
 Preston Brown
