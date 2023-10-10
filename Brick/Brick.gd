@@ -17,6 +17,7 @@ func _physics_process(_delta):
 func hit(_ball):
 	var BrickSound = get_node("/root/Game/SoundContainer/BrickSound")
 	BrickSound.play()
+	$ParticleSpray.emitting = true
 	die()
 
 func die():
