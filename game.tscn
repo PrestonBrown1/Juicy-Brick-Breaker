@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bd5m3yq1k5fx8"]
+[gd_scene load_steps=17 format=3 uid="uid://bd5m3yq1k5fx8"]
 
 [ext_resource type="Script" path="res://Brick/Brick_Container.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dmwf8wjdir6y5" path="res://Paddle/Paddle.tscn" id="2"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://bc1rr7cj25mrr" path="res://Assets/Sounds/BrickSound.wav" id="11_exqcy"]
 [ext_resource type="AudioStream" uid="uid://dso3waveujwt" path="res://Assets/Sounds/DeathSound.wav" id="12_adt8b"]
 [ext_resource type="AudioStream" uid="uid://cm3ru0hqf2ocv" path="res://Assets/Sounds/MainMusic.mp3" id="13_o7shu"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="14_a873r"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(200, 1000)
@@ -97,5 +98,9 @@ stream = ExtResource("12_adt8b")
 stream = ExtResource("13_o7shu")
 volume_db = -3.748
 autoplay = true
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("14_a873r")
 
 [connection signal="timeout" from="Fever/Timer" to="Fever" method="_on_Timer_timeout"]

@@ -25,6 +25,7 @@ func _input(event):
 func hit(_ball):
 	var PaddleSound = get_node("/root/Game/SoundContainer/PaddleSound")
 	PaddleSound.play()
+	$ParticleSpray1.restart()
 	$ParticleSpray1.emitting = true
 	if tween:
 		tween.kill()
