@@ -1,9 +1,9 @@
 # Project Name
 
-Context and date
+10/11/2023 for a Project in MSCH-C 220
 
 Description
-
+A "juicified" brick breaker game
 
 ## Implementation
 
@@ -20,6 +20,8 @@ Sound for Paddle
 Sound for Death
 Main Music
 Brick Particles - Currently not working?
+Screen Shake on Death
+Powerup Sprite
 
 
 ## References
@@ -29,7 +31,6 @@ Orbitron Font - Made by Mat McInerney
 More Particles
 More Tweening
 Ball Texture on Lives
-Screen Shake
 
 ## Created by
 Preston Brown
